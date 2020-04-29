@@ -1,14 +1,14 @@
 # SSD: Single Shot MultiBox Object Detector, in PyTorch
 A [PyTorch](http://pytorch.org/) implementation of [Single Shot MultiBox Detector](http://arxiv.org/abs/1512.02325) from the 2016 paper by Wei Liu, Dragomir Anguelov, Dumitru Erhan, Christian Szegedy, Scott Reed, Cheng-Yang, and Alexander C. Berg.  The official and original Caffe code can be found [here](https://github.com/weiliu89/caffe/tree/ssd).
 
-	```Shell
-	conda create --name pytorch
-	conda activate pytorch
-	conda install pytorch==1.1.0 torchvision==0.3.0 cudatoolkit=10.0 -c pytorch
+	```
+	conda create --name ssd
+	conda env remove --name ssd
+	conda create --name ssd --y
+	conda activate ssd
+	conda install pytorch==1.1.0 torchvision==0.3.0 cudatoolkit=10.0 -c pytorch --y
 	pip install "pillow<7"
-	conda install matplotlib
-	conda install -c menpo opencv
-	python demo/demo.py
+	conda install matplotlib --y
 	```
 
 <img align="right" src= "https://github.com/amdegroot/ssd.pytorch/blob/master/doc/ssd.png" height = 400/>
